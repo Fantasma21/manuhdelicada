@@ -66,12 +66,12 @@ body {
 .Botao {
     text-decoration: none;
     color: #fff;
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: 700;
-    background-color: red;
+    background-color: rgb(238, 5, 5);
     border: 2px solid #fff;
     border-radius: 25px;
-    padding: 10px 30px;
+    padding: 10px 20px;
 }
 
 /* topo do site */
@@ -84,8 +84,8 @@ body {
 /* Cartões */
 .Card {
     margin-top: 25px;
-    width: 280px;
-    height: 520px;
+    width: 150px;
+    height: 450px;
     background-color: #e8e8e8;
     border: 1px solid#a1a1a1;
     border-radius: 25px;
