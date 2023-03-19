@@ -1,0 +1,525 @@
+/*
+ Folha de estilo 
+ @aautor Emanuel Albuquerque
+*/
+
+/* Importação (google fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+/* CSS RESET*/
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+/* Layout */
+.Container {
+    margin: 0 auto;
+
+}
+
+/* posicionar cabeçalho */
+.Flex {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+.Flex2 {
+    display: flex;
+    align-items: center;
+}
+
+.Flex3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Flex4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Flex5 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.Flex6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Botao {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: red;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 10px 30px;
+}
+
+/* topo do site */
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* Cartões */
+.Card {
+    margin-top: 25px;
+    width: 280px;
+    height: 520px;
+    background-color: #e8e8e8;
+    border: 1px solid#a1a1a1;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.Card img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.Card h3 {
+    margin-top: 15px;
+}
+
+.Card p {
+    text-align: left;
+    color: #434343;
+    padding: 10px 10px 20px 20px;
+}
+
+.Card a {
+    padding: 6px 20px;
+}
+
+/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/* Cabeçalho */
+header {
+    height: 60px;
+}
+
+#logo img {
+    width: 128px;
+    height: 128px;
+
+}
+
+#check {
+    display: none;
+}
+
+/* Menu responsivo */
+label {
+    font-size: 3em;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    background-color: rgba(71, 71, 68, 0.884);
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    /* esconder o menu */
+    right: -100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+/* trazer o menu de volta */
+#check:checked~ul {
+    right: 0;
+}
+
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid #eee4e4;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Destaque */
+main {
+    height: 45vh;
+    background: url(img/banner3.png);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 4.5em;
+    
+    font-family: Parisienne;
+
+}
+
+main h2 {
+    font-size: 1em;
+    margin: 10px 0px 20px 0px;
+    color: rgb(11, 1, 17);
+}
+
+/* Sobre */
+#sobre {
+    padding: 50px 0px;
+    background: url(img/background6.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#destaqueSobre {
+    display: none;
+}
+
+#textSobre {
+    color: #fff;
+    padding: 0px 10px;
+}
+
+#testSobre h2 {
+    margin-bottom: 10px;
+}
+
+.TopicosSobre {
+    margin-top: 20px;
+}
+
+/* One page */
+#onepage {
+    padding: 50px 10px;
+}
+
+#onepage h2 {
+    margin-bottom: 10px;
+}
+
+#onepage p {
+    margin-bottom: 25px;
+}
+
+#textoSite h2 {
+    
+    
+
+}
+
+#video iframe {
+    width: 340px;
+    height: 191px;
+    border: 0;
+}
+
+/* pdf/qrcode */
+#pdfqr {
+    padding: 50px 0px;
+    background: url(img/background6.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#textopdf {
+    color: #110303;
+    padding: 0px 10px;
+}
+
+#textopdf h2 {
+    margin-bottom: 10px;
+}
+
+#textopdf p {
+    margin-bottom: 40px;
+}
+
+/* fazer sumir parte de um texto em dispositivos móveis */
+#textopdf span {
+    display: none;
+}
+
+#qrcode {
+    display: none;
+}
+
+/* Conteúdo */
+#conteudo {
+    padding: 50px 0px;
+}
+
+#conteudo h2 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* rodapé */
+address {
+    padding: 35px 10px 50px 10px;
+    background: url(img/background6.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+address a {
+    text-decoration: none;
+    color: #fff;
+}
+
+address img {
+    padding-top: 15px;
+}
+
+#iconeLocal {
+    display: none;
+}
+
+#dados {
+    margin: 30px 0px 15px 0px;
+}
+
+#googleMaps {
+    display: none;
+}
+
+footer {
+    padding: 30px;
+    background-color: #343538;
+    color: #fff;
+    font-size: 0.875em;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#social {
+    margin-bottom: 25px;
+}
+
+main h1,
+main h2 {
+    text-shadow: #000 0.05em 0.05em 0.05em;
+}
+
+/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width:576px) {
+
+    /* Layout */
+    .Container {
+        max-width: 540px;
+    }
+
+    /* Destaque */
+    main h1,
+    main h2 {
+        text-shadow: #000 0.05em 0.05em 0.05em;
+    }
+
+    main h1 {
+        font-size: 2.5em;
+        margin-top: 60px;
+    }
+
+    /* One page */
+    #video iframe {
+        width: 560px;
+        height: 315px;
+    }
+
+    /* rodapé */
+    .Flex5 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #social {
+        margin: 0;
+    }
+}
+
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width:768px) {
+
+    /* Layout */
+    .Container {
+        max-width: 720px;
+    }
+
+    /* Destaque */
+    main {
+        height: 45vh;
+    }
+
+    main h1 {
+        font-size: 4em;
+    }
+
+    main h2 {
+        font-size: 1em;
+    }
+
+}
+
+/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width:992px) {
+
+    /* Layout */
+    .Container {
+        max-width: 960px;
+    }
+
+    /* Destaque */
+    main {
+        height: 70vh;
+    }
+
+}
+
+/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width:1200px) {
+
+    /* Layout */
+    .Container {
+        max-width: 1140px;
+    }
+
+    /* Cabeçalho */
+    header {
+        height: 100px;
+    }
+
+    #logo img {
+        width: 189px;
+        height: 189px;
+        margin-top: 30px;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        position: static;
+        height: auto;
+        background-color: transparent;
+        margin-top: 40px;
+    }
+
+    nav ul li {
+        float: left;
+        border: 0;
+    }
+
+    nav ul li a {
+        color: rgb(68, 67, 65);
+    }
+
+    nav ul li a:hover {
+        color: rgba(155, 23, 6, 0.733);
+    }
+
+    /* Sobre */
+
+    #sobre {
+        /* Efeito de rolagem parallax */
+        background-attachment: fixed;
+    }
+
+    #destaqueSobre {
+        display: inline;
+    }
+
+    #destaqueSobre img {
+        border-radius: 50%;
+        margin-right: 50px;
+    }
+
+    /* One page */
+    .Flex3 {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* pdf/qrcode */
+    #pdfqr {
+        background-attachment: fixed;
+    }
+
+    #pdfqr span {
+        display: inline;
+        text-decoration: underline;
+    }
+
+    #qrcode {
+        display: inline;
+    }
+
+    #qrcode img {
+        width: 150px;
+        height: 150px;
+        border-left: 200px;
+    }
+
+    /* rodapé */
+    .Flex6 {
+        flex-direction: row-reverse;
+    }
+
+    address {
+        padding-top: 50px;
+
+    }
+
+    #iconeLocal {
+        display: inline;
+
+    }
+
+    #iconeMapa {
+        display: none;
+    }
+
+    #googleMaps {
+        display: inline;
+        padding: 10px;
+    }
+
+    #contato img {
+        padding-right: 170px;
+    }
+
+    .endereco {
+        padding: 10px;
+    }
+}
