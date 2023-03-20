@@ -84,8 +84,8 @@ body {
 /* Cartões */
 .Card {
     margin-top: 25px;
-    width: 150px;
-    height: 450px;
+    width: 170px;
+    height: 400px;
     background-color: #e8e8e8;
     border: 1px solid#a1a1a1;
     border-radius: 25px;
@@ -109,6 +109,16 @@ body {
 .Card a {
     padding: 6px 20px;
 }
+
+.img-amp1 {
+    
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .img-amp1:hover {
+    transform: scale(2.0);
+    z-index: 1;
+  }
 
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -178,7 +188,7 @@ main {
 
 main h1 {
     font-size: 4.5em;
-    
+
     font-family: Parisienne;
 
 }
@@ -206,6 +216,10 @@ main h2 {
     padding: 0px 10px;
 }
 
+#textSobre span {
+    display: none;
+}
+
 #testSobre h2 {
     margin-bottom: 10px;
 }
@@ -227,15 +241,11 @@ main h2 {
     margin-bottom: 25px;
 }
 
-#textoSite h2 {
-    
-    
+#textoSite h2 {}
 
-}
-
-#video iframe {
+#video {
     width: 340px;
-    height: 191px;
+
     border: 0;
 }
 
@@ -250,6 +260,11 @@ main h2 {
 #textopdf {
     color: #110303;
     padding: 0px 10px;
+}
+
+#textopdf h1 {
+    margin-bottom: 10px;
+    color:#f50d0d ;
 }
 
 #textopdf h2 {
@@ -351,9 +366,9 @@ main h2 {
     }
 
     /* One page */
-    #video iframe {
-        width: 560px;
-        height: 315px;
+    #video {
+        width: 350px;
+
     }
 
     /* rodapé */
@@ -479,6 +494,10 @@ main h2 {
     #pdfqr span {
         display: inline;
         text-decoration: underline;
+    }
+
+    #textSobre span {
+        display: inline;
     }
 
     #qrcode {
